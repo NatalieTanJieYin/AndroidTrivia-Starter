@@ -78,8 +78,7 @@ class GameFragment : Fragment() {
         // Bind this fragment class to the layout
         binding.game = this
 
-        val args = GameWonFragmentArgs.fromBundle(requireArguments())
-        Toast.makeText(context, "NumCorrect: ${args.numCorrect}, NumQuestions: ${args.numQuestions}", Toast.LENGTH_LONG).show()
+
 
         // Set the onClickListener for the submitButton
         binding.submitButton.setOnClickListener @Suppress("UNUSED_ANONYMOUS_PARAMETER")
